@@ -1,4 +1,4 @@
-var CACHE = 'ironlizzie-v2';
+var CACHE = 'bigfoot-wildrun-v1';
 var FILES = ['./', './index.html', './manifest.json', './icon-192.svg', './icon-512.svg'];
 
 self.addEventListener('install', function(e) {
