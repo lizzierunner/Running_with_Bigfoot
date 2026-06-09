@@ -3,25 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>IRON LIZZIE — HALF MARATHON TRAINING</title>
+<title>RUNNING WITH BIGFOOT — SARS WILD RUN TRAINING</title>
 <link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#E8142A">
+<meta name="theme-color" content="#1B5E3A">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Iron Lizzie">
+<meta name="apple-mobile-web-app-title" content="Bigfoot Run">
 <link rel="apple-touch-icon" href="icon-192.svg">
 <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root {
-  --ink: #0a0a0a;
-  --paper: #f5f0e1;
-  --yellow: #FFE338;
-  --red: #E8142A;
-  --blue: #1A47B8;
-  --cyan: #00CFFF;
-  --green: #00D166;
-  --purple: #8B5CF6;
-  --orange: #FF6B2B;
+  --ink: #1C1309;
+  --paper: #EFE8CC;
+  --yellow: #D4960A;
+  --red: #9B3E14;
+  --blue: #1B5E3A;
+  --cyan: #3DAA96;
+  --green: #3D8020;
+  --purple: #7B5C9A;
+  --orange: #C86A1A;
   --panel-bg: #fff;
   --outline: 3px solid var(--ink);
   --outline-thick: 4px solid var(--ink);
@@ -434,7 +434,7 @@ body::after {
 
 /* POWER METER */
 .power-panel {
-  background: linear-gradient(135deg, var(--purple) 0%, var(--blue) 100%);
+  background: linear-gradient(135deg, var(--orange) 0%, var(--blue) 100%);
   border: var(--outline-thick);
   border-bottom: 5px solid var(--ink);
   padding: 10px 14px;
@@ -628,7 +628,7 @@ body::after {
   line-height: 1.4;
 }
 
-/* ── IRON LIZZIE SAYS QUOTE BOX ── */
+/* ── BIGFOOT SAYS QUOTE BOX ── */
 .ilq-wrap {
   background: var(--ink);
   border: 3px solid var(--ink);
@@ -3170,17 +3170,17 @@ body::after {
 <div class="splash-screen" id="splashScreen" onclick="dismissSplash()">
   <div class="splash-bg"></div>
   <div class="splash-rays"></div>
-  <div class="splash-corner tl">MARVEL AT THE POWER OF</div>
-  <div class="splash-corner tr">EST. MARCH 2026</div>
+  <div class="splash-corner tl">RUN WILD IN THE</div>
+  <div class="splash-corner tr">PACIFIC NORTHWEST</div>
   <div class="splash-corner bl">ISSUE #1 OF INFINITY</div>
-  <div class="splash-corner br">APPROVED BY THE COMICS CODE</div>
+  <div class="splash-corner br">SARS WILD RUN &middot; AUG 9</div>
   <div class="splash-content">
-    <div class="splash-issue">PRESENTING THE INCREDIBLE</div>
-    <div class="splash-hero-silhouette">&#x1F9B8;&#x200D;&#x2640;&#xFE0F;</div>
-    <div class="splash-title">IRON LIZZIE</div>
-    <div class="splash-sub">HALF MARATHON QUEST</div>
-    <div class="splash-tagline">"She doesn't run FROM the deadline — she runs THROUGH it."</div>
-    <div class="splash-cta">-- TAP TO BEGIN YOUR ORIGIN STORY --</div>
+    <div class="splash-issue">PRESENTING THE LEGENDARY</div>
+    <div class="splash-hero-silhouette">&#x1F463;</div>
+    <div class="splash-title">BIGFOOT RUN</div>
+    <div class="splash-sub">SARS WILD RUN QUEST</div>
+    <div class="splash-tagline">"The trail doesn't run itself. Lace up. The forest is waiting."</div>
+    <div class="splash-cta">-- TAP TO BEGIN YOUR WILD RUN SAGA --</div>
   </div>
 </div>
 
@@ -3199,28 +3199,28 @@ body::after {
     <div class="masthead">
       <button class="sfx-toggle" id="sfxToggle" title="Toggle sound effects">🔊</button>
       <button class="print-btn" id="printPlanBtn" title="Print / Save PDF Training Plan">🖨️</button>
-      <div class="masthead-badge" id="mastheadBadge">&#x1F3C1; AUG 9 &middot; VIRTUAL HALF MARATHON</div>
+      <div class="masthead-badge" id="mastheadBadge">&#x1F463; AUG 9 &middot; SARS WILD RUN</div>
       <div class="masthead-vol">
         <span>VOL. 1 &middot; ISSUE #<span id="issueNum">1</span></span>
         <span id="dateDisplay">MAY 2026</span>
       </div>
-      <h1>IRON LIZZIE</h1>
-      <div class="masthead-sub">&#x26A1; HALF MARATHON QUEST &#x26A1;</div>
+      <h1>BIGFOOT RUN</h1>
+      <div class="masthead-sub">&#x1F332; SARS WILD RUN QUEST &#x1F332;</div>
     </div>
 
     <!-- HERO STRIP -->
   <div class="hero-strip">
       <div class="xp-panel">
-        <div class="xp-label">&#x26A1; HERO XP</div>
+        <div class="xp-label">&#x1F332; TRAIL XP</div>
         <div class="xp-value" id="xpValue">0</div>
-        <div class="xp-rank" id="xpRank">RANK: SIDEKICK</div>
+        <div class="xp-rank" id="xpRank">RANK: FOREST WALKER</div>
         <div class="streak-display" id="streakDisplay"></div>
       </div>
       <div class="villain-panel">
-          <div class="villain-label">&#x1F3C1; HALF MARATHON IN</div>
+          <div class="villain-label">&#x1F3C1; SARS WILD RUN IN</div>
           <div class="villain-value" id="villainCountdown">--d</div>
           <div class="villain-clock" id="villainClock">--:--:--</div>
-          <div class="villain-name" id="villainName">AUG 9 — THE DEADLINE APPROACHES</div>
+          <div class="villain-name" id="villainName">AUG 9 — THE WILD RUN APPROACHES</div>
       </div>
     </div>
 
@@ -3234,9 +3234,9 @@ body::after {
         <div class="power-fill" id="progressFill"></div>
       </div>
       <div class="power-markers">
-        <span>ORIGIN</span>
-        <span>TRAINING</span>
-        <span>HERO</span>
+        <span>FOREST</span>
+        <span>TRAIL</span>
+        <span>BIGFOOT</span>
         <span>LEGEND</span>
       </div>
     </div>
@@ -3250,11 +3250,11 @@ body::after {
 
     <!-- SPEECH BUBBLE -->
     <div class="speech-bubble">
-      <div class="bubble-who">&#x1F9B8;&#x200D;&#x2640;&#xFE0F; IRON LIZZIE SAYS:</div>
+      <div class="bubble-who">&#x1F463; BIGFOOT SAYS:</div>
       <div class="bubble-text" id="motoText">Loading mission briefing...</div>
     </div>
 
-    <!-- IRON LIZZIE SAYS QUOTE BOX -->
+    <!-- BIGFOOT SAYS QUOTE BOX -->
     <div id="quoteBox"></div>
 
     <!-- MISSION RANDOMIZER — renders into this div -->
@@ -3269,9 +3269,9 @@ body::after {
 
     <!-- STORY RECAP -->
     <div class="story-recap">
-      <div class="recap-title">&#x1F4D6; THE STORY SO FAR...</div>
+      <div class="recap-title">&#x1F4D6; THE LEGEND SO FAR...</div>
       <div class="recap-text" id="recapText">
-        <em>Iron Lizzie</em> has begun her quest. The Half Marathon on August 9th looms like a supervillain's fortress. One hero. One goal. Let's go.
+        The SARS Wild Run on August 9th calls from the forest. One runner. One trail. One mission. Bigfoot is watching you train.
       </div>
       <div class="recap-next" id="recapNext">NEXT ISSUE: THE TRAINING BEGINS! &rarr;</div>
     </div>
@@ -3291,17 +3291,17 @@ body::after {
   <!-- WEEZER SIDE QUEST — dog-themed bonus movement missions -->
   <div id="weezerSideQuestBox"></div>
 
-  <div class="page-number">-- PAGE 1 OF THE IRON LIZZIE HALF MARATHON SAGA --</div>
+  <div class="page-number">-- PAGE 1 OF THE BIGFOOT WILD RUN SAGA --</div>
 </div>
 
 <script>
-var STORAGE_KEY = 'ironlizzie_hm_v1';
+var STORAGE_KEY = 'bigfoot_wildrun_v1';
 var WEEK_DAYS = ['SUN','MON','TUE','WED','THU','FRI','SAT'];
 var MONTHS = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
 var RACE_DATE = new Date('2026-08-09T00:00:00');
 
-var ACTION_WORDS = ['POW!','ZAP!','BAM!','KA-POW!','WHAM!','SMASH!','BOOM!','KAPOW!','THWACK!','CRUNCH!','YES!!','HEROIC!'];
-var SFX_WORDS = ['*WHOOSH*','*THUD*','*CRACK*','*SWOOSH*','*ZING*','*KAPOW*','*WHAM*','*THWIP*'];
+var ACTION_WORDS = ['POW!','ZAP!','STOMP!','KA-POW!','WHAM!','ROAR!','BOOM!','KAPOW!','THWACK!','CRUNCH!','YES!!','WILD!','TRAIL!','RUN!'];
+var SFX_WORDS = ['*WHOOSH*','*STOMP*','*CRUNCH*','*SWOOSH*','*HOWL*','*KAPOW*','*THUD*','*SNAP*'];
 
 // ── MINIMUM EFFORT MISSIONS ───────────────────────────────────
 // Rolled when the user clicks "I Don't Wanna" — still counts as complete.
@@ -3428,56 +3428,64 @@ var GALLOWAY_INTERVALS = [
   },
 ];
 
-// ── IRON LIZZIE SAYS — motivational quote bank ────────────────
+// ── BIGFOOT SAYS — motivational quote bank ────────────────────
 var IRON_LIZZIE_QUOTES = [
-  // Running truths
-  { q: "The first mile is a lie. The second mile is a negotiation. The third mile is where you actually start running.", who: "Iron Lizzie, probably" },
-  { q: "You don't have to want to run. You just have to go anyway. Motivation is a scam. Shoes are the plan.", who: "Iron Lizzie" },
-  { q: "Bad run? Good. You now have proof that you ran even when it was bad. That's the whole thing.", who: "Iron Lizzie" },
-  { q: "Running is just controlled falling forward with increasingly dramatic breathing.", who: "Iron Lizzie, biomechanics expert" },
-  { q: "Every runner looks unhinged to someone sitting on a couch. Own it.", who: "Iron Lizzie" },
-  { q: "The Galloway method is just interval napping between sprints. You're basically a pro.", who: "Iron Lizzie" },
-  { q: "You are not slow. You are giving the scenery more time to appreciate you.", who: "Iron Lizzie" },
-  { q: "If you're asking 'am I a real runner yet?' — you became one the first time you laced up your shoes and went outside. That's it. That's the whole bar.", who: "Iron Lizzie" },
-  // ADHD-specific
-  { q: "Did you hyperfocus on a YouTube rabbit hole instead of going to bed early? Bold pre-race strategy. Let's go anyway.", who: "Iron Lizzie, no judgement" },
-  { q: "Your brain said 'we should run' at 9pm on a Wednesday and you WENT. That is unhinged and heroic in equal measure.", who: "Iron Lizzie" },
-  { q: "The plan says rest day. Your legs say maybe just a little jog. Your brain says seventeen different things at once. Listen to your legs.", who: "Iron Lizzie" },
-  { q: "Forgot to track it? Still counts. The miles don't disappear because Strava didn't see them.", who: "Iron Lizzie" },
-  { q: "You did the thing even though your brain was doing seventeen other things simultaneously. That's not a small thing.", who: "Iron Lizzie" },
-  { q: "Hyperfocus activated: running playlist curated, route analyzed, weather checked three times, shoes still on the wrong feet. We love this journey.", who: "Iron Lizzie" },
-  // Weezer / dog adjacent
-  { q: "Weezer does not care about your pace. Weezer cares about the smell of that one particular lamppost. You're already winning.", who: "Iron Lizzie & Weezer" },
-  { q: "The Blue Album goes from track 1 to track 10 in exactly one solid easy run. This is not a coincidence. Rivers Cuomo is a running coach.", who: "Iron Lizzie" },
-  { q: "Weezer (the dog) has completed more miles than she knows. She thinks she's just investigating smells. That's also valid training.", who: "Iron Lizzie" },
-  // Half marathon countdown
-  { q: "August 9th is not a deadline. It's the day the story ends. And you are writing it right now, one run at a time.", who: "Iron Lizzie" },
-  { q: "A half marathon is 13.1 miles. You've already run more than that in training. The race is just doing it in one go with snacks.", who: "Iron Lizzie" },
-  { q: "The half marathon will feel hard. That's not a sign you're failing. That's just what hard things feel like. You've felt hard things before.", who: "Iron Lizzie" },
-  { q: "Mile 10 will feel like the end of the world. Miles 11–13 will feel like you invented running. Trust the process.", who: "Iron Lizzie, race day dispatch" },
-  // Low-key chaos energy
-  { q: "Running gives you somewhere to put the unhinged energy. Cheaper than therapy. Only slightly less sweaty.", who: "Iron Lizzie" },
-  { q: "Some runs feel like flying. Some runs feel like moving through wet cement in a bad dream. Both are training.", who: "Iron Lizzie" },
-  { q: "The only run you regret is the one you talked yourself out of while still in bed.", who: "Iron Lizzie, 6am edition" },
-  { q: "You're not 'behind.' There's no behind. There's just today, and whether you went.", who: "Iron Lizzie" },
-  { q: "You don't need a perfect week. You need enough weeks. You're building enough weeks.", who: "Iron Lizzie" },
-  { q: "Progress is not a straight line. It's a chaotic scribble that, if you squint at it from far enough away, is definitely going upward.", who: "Iron Lizzie" },
-  // Short punchy ones
-  { q: "GO.", who: "Iron Lizzie, minimalist era" },
-  { q: "The run won't do itself. Unfortunately.", who: "Iron Lizzie" },
-  { q: "Rest days are training days. You are currently training to not explode.", who: "Iron Lizzie" },
-  { q: "You showed up. That's the hardest part. The rest is just left foot, right foot.", who: "Iron Lizzie" },
-  { q: "Strong legs. Chaotic brain. Good playlist. That's the whole formula.", who: "Iron Lizzie" },
+  // Trail running truths
+  { q: "The forest doesn't care about your pace. It cares that you showed up and kept moving.", who: "Bigfoot, trail philosopher" },
+  { q: "You don't need trail shoes if you have big enough feet. Unfortunately that's just me. Wear trail shoes.", who: "Bigfoot" },
+  { q: "Every mud puddle is optional. Every mile is not. Keep going.", who: "Bigfoot" },
+  { q: "Running through the woods at dawn when no one else is around is basically my whole personality.", who: "Bigfoot" },
+  { q: "I've been spotted doing 5 miles at a 12-minute pace in the Pacific Northwest. I'll never tell what route.", who: "Bigfoot, trail legend" },
+  { q: "The Galloway method is just scheduled walks with purpose. The forest has been doing this for centuries.", who: "Bigfoot" },
+  { q: "You are not slow. You are building a relationship with the trail that simply takes time.", who: "Bigfoot" },
+  { q: "If you're running and wondering 'am I a real runner?' — yes. Real runners run. You're running. Do the math.", who: "Bigfoot" },
+  // SARS Wild Run specific
+  { q: "The SARS Wild Run is not a road race. It is a conversation with the trail. Show up ready to listen.", who: "Bigfoot, SARS Wild Run veteran" },
+  { q: "August 9th is coming. The Wild Run doesn't care if you're ready. But you ARE ready. You've been training.", who: "Bigfoot" },
+  { q: "Trail races are just road races where the road decided to stop cooperating. You'll love it.", who: "Bigfoot" },
+  { q: "At the SARS Wild Run: if you see me on the trail, just keep running. I'll be cheering from the tree line.", who: "Bigfoot, spectator" },
+  // Pacific Northwest / forest vibes
+  { q: "You live in Bigfoot country. This is not a liability. This is a training advantage.", who: "Bigfoot" },
+  { q: "The Pacific Northwest was built for trail runners. The rain makes you harder. The trees make you faster. Fact.", who: "Bigfoot, local expert" },
+  { q: "Every run through the forest is a run I've already done. You're on my home turf now. Welcome.", who: "Bigfoot" },
+  { q: "Running in the rain builds character. Running in Pacific Northwest rain builds LEGEND.", who: "Bigfoot" },
+  // Motivation & running truths
+  { q: "Motivation is for people who haven't discovered habit yet. Lace up. The forest is waiting.", who: "Bigfoot" },
+  { q: "A run you didn't want to do that you did anyway is worth triple the XP of one you were excited about.", who: "Bigfoot" },
+  { q: "Bad run? Add it to the log. The log doesn't judge. Neither does the forest.", who: "Bigfoot" },
+  { q: "Rest days are not lazy days. They're the days your legs are building the strength for the next big trail.", who: "Bigfoot" },
+  { q: "You've run farther than most people drive to work. Think about that.", who: "Bigfoot" },
+  { q: "Some runs feel like flying through a forest at dawn. Some feel like moving through mud. Both are training.", who: "Bigfoot" },
+  // ADHD energy
+  { q: "Did you hyperfocus on trail maps for 2 hours instead of sleeping? Bold strategy. Go run anyway.", who: "Bigfoot, no judgement" },
+  { q: "The plan says rest day. Your legs say maybe just a little jog. Your brain says seventeen things. Listen to your legs.", who: "Bigfoot" },
+  { q: "Forgot to log it? Still counts. The forest saw you. I saw you.", who: "Bigfoot" },
+  { q: "You did the thing even though your brain was running its own 400 different tabs simultaneously. That's heroic.", who: "Bigfoot" },
+  { q: "Hyperfocus activated: trail route analyzed, playlist curated, weather checked three times, shoes on the wrong feet. We love this.", who: "Bigfoot" },
+  // Weezer the dog
+  { q: "Weezer has completed more miles than she knows. She thinks she's just investigating smells. She is correct. Smells are data.", who: "Bigfoot, canine training expert" },
+  { q: "Running with your dog on a trail at sunset is the most correct thing a human being can do.", who: "Bigfoot" },
+  { q: "Weezer knows every good trail in the area by scent. She's been your pacer this whole time.", who: "Bigfoot" },
+  // Short and punchy
+  { q: "GO.", who: "Bigfoot, minimalist era" },
+  { q: "The run won't do itself. Neither will August 9th wait for you to feel ready.", who: "Bigfoot" },
+  { q: "Strong legs. Big feet. Good trail. That's the whole formula.", who: "Bigfoot" },
+  { q: "Progress looks like a confused squirrel running sideways. It's still progress.", who: "Bigfoot, zoologist" },
+  { q: "Left foot, right foot, repeat for 13.1 miles. You've been practicing. You've got this.", who: "Bigfoot" },
+  { q: "You're not 'behind.' There's no behind. There's just today, and whether you went.", who: "Bigfoot" },
+  { q: "You don't need a perfect week. You need enough weeks. You're building enough weeks.", who: "Bigfoot" },
+  { q: "Strong legs. Chaotic brain. Good playlist. That's the whole Galloway formula.", who: "Bigfoot" },
+  { q: "Mile 10 will feel like the end of the world. Miles 11–13 will feel like you invented running. Trust the process.", who: "Bigfoot, race day dispatch" },
 ];
 
 var RANKS = [
-  { min: 0,    name: 'SIDEKICK',        emoji: '\uD83E\uDDB8' },
-  { min: 100,  name: 'ROOKIE RUNNER',   emoji: '\u26A1' },
-  { min: 300,  name: 'PAVEMENT HERO',   emoji: '\uD83D\uDEE1' },
-  { min: 700,  name: 'DISTANCE WARRIOR',emoji: '\uD83C\uDFD9' },
-  { min: 1200, name: 'HALF MARATHON HUNTER', emoji: '\uD83D\uDCA5' },
-  { min: 1800, name: 'ULTRA LEGEND',    emoji: '\uD83C\uDF1F' },
-  { min: 2500, name: 'IRON LIZZIE',     emoji: '\uD83E\uDDB8\u200D\u2640\uFE0F' },
+  { min: 0,    name: 'FOREST WALKER',      emoji: '\uD83C\uDF32' },
+  { min: 100,  name: 'TRAIL SCOUT',        emoji: '\uD83D\uDC3E' },
+  { min: 300,  name: 'WOODS RUNNER',       emoji: '\uD83E\uDDB6' },
+  { min: 700,  name: 'TRAIL WARRIOR',      emoji: '\u26A1' },
+  { min: 1200, name: 'WILD RUN HUNTER',    emoji: '\uD83C\uDFD5\uFE0F' },
+  { min: 1800, name: 'BIGFOOT STATUS',     emoji: '\uD83C\uDF1F' },
+  { min: 2500, name: 'RUNS WITH BIGFOOT',  emoji: '\uD83E\uDDB6' },
 ];
 
 var ACHIEVEMENTS = [
@@ -3490,7 +3498,7 @@ var ACHIEVEMENTS = [
   { id: 'twenty_done',   check: function(s){ return s.completedCount >= 20; },                                 text: '\uD83D\uDE80 20 MISSIONS DOWN! UNSTOPPABLE!' },
   { id: 'thirty_done',   check: function(s){ return s.completedCount >= 30; },                                 text: '\uD83D\uDD25 30 MISSIONS! YOU\'RE A MACHINE!' },
   { id: 'long_run',      check: function(s){ return s.longRunsDone >= 1; },                                    text: '\uD83C\uDF05 FIRST LONG RUN CONQUERED!' },
-  { id: 'long_run_5',    check: function(s){ return s.longRunsDone >= 5; },                                    text: '\uD83C\uDFC6 5 LONG RUNS IN! HALF MARATHON READY!' },
+  { id: 'long_run_5',    check: function(s){ return s.longRunsDone >= 5; },                                    text: '\uD83C\uDFC6 5 LONG RUNS IN! SARS WILD RUN READY!' },
 
   // ── NEW BADGES ───────────────────────────────────────────────
   // First 5K: cumulative completed run miles ≥ 3.1
@@ -3539,14 +3547,14 @@ var ACHIEVEMENTS = [
 ];
 
 var STORY_BEATS = [
-  { min: 0,  text: '<em>Iron Lizzie</em> has taken on the Half Marathon quest. August 9th looms like a supervillain\'s fortress. One hero. One mission. The Galloway method is her secret weapon...', next: 'NEXT ISSUE: THE TRAINING BEGINS! \u2192' },
-  { min: 5,  text: '<em>Iron Lizzie</em> has found her rhythm! Run-walk-run. The intervals are stacking up. Strength days are building race-ready legs. The citizens cheer her on...', next: 'NEXT ISSUE: THE STRENGTH ARC! \u2192' },
-  { min: 14, text: 'Weeks conquered! <em>Iron Lizzie\'s</em> power level is rising. Each Saturday long run is a new chapter. Self-doubt scatters before her. The fortress walls are crumbling...', next: 'NEXT ISSUE: THE LONG RUN CHALLENGE! \u2192' },
-  { min: 28, text: 'The halfway point! <em>Iron Lizzie</em> stands atop the training montage of her life. She\'s run farther than she ever imagined. August 9th is starting to look... BEATABLE.', next: 'NEXT ISSUE: THE FINAL BUILD! \u2192' },
-  { min: 42, text: '<em>Iron Lizzie</em> has become UNSTOPPABLE. Long runs conquered. Legs strong. Galloway locked in. August 9th belongs to HER.', next: 'THE FINALE: VIRTUAL HALF MARATHON \u2192 AUG 9! \uD83C\uDFC6' },
+  { min: 0,  text: 'The SARS Wild Run on August 9th calls from deep in the forest. One runner. One trail. One mission. The Galloway method is your secret weapon... and somewhere out there in the trees, <em>Bigfoot is watching you train.</em>', next: 'NEXT ISSUE: THE TRAINING BEGINS! \u2192' },
+  { min: 5,  text: 'The trail calls — and our hero answers! Run-walk-run. The intervals are stacking up. Strength days are building race-ready legs. The forest is cheering. <em>Bigfoot nods with deep respect.</em>', next: 'NEXT ISSUE: THE STRENGTH ARC! \u2192' },
+  { min: 14, text: 'Weeks conquered! Power level rising. Each Saturday long run is a new chapter in the Wild Run saga. Self-doubt scatters like startled deer. <em>Bigfoot has started leaving motivational footprints on the trail.</em>', next: 'NEXT ISSUE: THE LONG RUN CHALLENGE! \u2192' },
+  { min: 28, text: 'The halfway point! Our runner stands at the top of the training arc. The SARS Wild Run is starting to look... <em>BEATABLE. Bigfoot reports from the tree line: "They\'re ready."</em>', next: 'NEXT ISSUE: THE FINAL BUILD! \u2192' },
+  { min: 42, text: 'UNSTOPPABLE. Long runs conquered. Legs strong. Galloway locked in. <em>Bigfoot himself was reportedly spotted pacing alongside on the last long run.</em> August 9th belongs to you.', next: 'THE FINALE: SARS WILD RUN \u2192 AUG 9! \uD83C\uDFC6' },
 ];
 
-// ===== IRON LIZZIE HALF MARATHON PLAN: May 25 - Aug 9, 2026 =====
+// ===== BIGFOOT RUN TRAINING PLAN: May 25 - Aug 9, 2026 (SARS Wild Run) =====
 // Mon/Wed/Fri = Galloway run | Tue/Thu = Strength A/B | Sat = Long Run | Sun = Rest
 var planDays = [
   // === WEEK 1 (May 25–31) ===
@@ -3754,7 +3762,7 @@ var planDays = [
     steps: [ { text: 'Warmup walk', time: '5 min' }, { text: 'Galloway 90s/30s for 4 mi', time: '45 min' }, { text: 'Cooldown walk', time: '5 min' } ],
     steadySteps: [ { text: 'Warmup walk', time: '5 min' }, { text: 'Steady 4 mi', time: '45 min' }, { text: 'Cooldown', time: '5 min' } ] },
   { date: '2026-06-20', type: 'longrun', title: 'LONG RUN', icon: '🏅', headerClass: 'longrun-header', btnClass: 'long-btn',
-    pow: 'GO LONG!', moto: '7 miles — over half the half marathon distance! You\'re doing it! 🌄',
+    pow: 'GO LONG!', moto: '7 miles — over halfway to the SARS Wild Run distance! You\'re doing it! 🌄',
     steadyMoto: 'Steady 7 miles. Pace yourself.',
     distance: '7 miles', duration: '80–95 min', intervals: '90s RUN / 30s WALK', xp: 90,
     steps: [ { text: 'Warmup walk', time: '5 min' }, { text: 'Galloway 90s/30s for 7 mi', time: '80 min' }, { text: 'Cooldown + stretch', time: '10 min' } ],
@@ -4019,7 +4027,7 @@ var planDays = [
     steps: [ { text: 'Warmup walk', time: '5 min' }, { text: 'Easy Galloway 90s/30s for 4 mi', time: '45 min' }, { text: 'Cooldown walk', time: '5 min' } ],
     steadySteps: [ { text: 'Warmup walk', time: '5 min' }, { text: 'Easy 4 mi', time: '45 min' }, { text: 'Cooldown', time: '5 min' } ] },
   { date: '2026-07-25', type: 'longrun', title: 'PEAK LONG RUN', icon: '🏆', headerClass: 'longrun-header', btnClass: 'long-btn',
-    pow: 'PEAK!', moto: '11 MILES — YOUR LONGEST RUN EVER! This is your race day rehearsal. GO GET IT, IRON LIZZIE! 🌄🔥',
+    pow: 'PEAK!', moto: '11 MILES — YOUR LONGEST RUN EVER! This is your SARS Wild Run rehearsal. THE FOREST IS YOURS! 🌄🔥',
     steadyMoto: 'Steady 11 miles. Race day rehearsal.',
     distance: '11 miles', duration: '125–145 min', intervals: '90s RUN / 30s WALK', xp: 140,
     steps: [ { text: 'Early start — warmup walk', time: '5 min' }, { text: 'Galloway 90s/30s for 11 mi', time: '130 min' }, { text: 'Fuel/water every 3 miles', time: 'during' }, { text: 'Cooldown + full stretch', time: '15 min' } ],
@@ -4110,25 +4118,25 @@ var planDays = [
     steps: [ { text: 'Easy 1.5 miles', time: '15 min' }, { text: 'Stretch', time: '5 min' } ],
     steadySteps: [ { text: 'Easy 1.5 miles', time: '15 min' }, { text: 'Stretch', time: '5 min' } ] },
   { date: '2026-08-08', type: 'rest', title: 'PRE-RACE REST', icon: '😴', headerClass: 'rest-header', btnClass: '', pow: 'ZZZ', moto: 'TOMORROW IS RACE DAY. Carb-load dinner, lay out gear, sleep early. You are READY. 💤', distance: '', duration: 'REST', intervals: 'PRE-RACE', xp: 10, steps: [ { text: 'Carb-load dinner 🍝', time: 'dinner' }, { text: 'Lay out race gear', time: 'evening' }, { text: 'Sleep early!', time: '9pm' } ] },
-  { date: '2026-08-09', type: 'longrun', title: '🏆 VIRTUAL HALF MARATHON!', icon: '🏆', headerClass: 'longrun-header', btnClass: 'long-btn',
-    pow: 'RACE DAY!!', moto: 'THIS IS IT! 13.1 miles. You trained 11 weeks for this moment. GO GET IT, IRON LIZZIE! 🔥🏅',
-    steadyMoto: 'RACE DAY! 13.1 miles. Trust your training, fuel smart, and FINISH STRONG!',
-    distance: '13.1 miles (Half Marathon)', duration: 'RACE DAY!', intervals: 'Galloway your plan', xp: 500,
+  { date: '2026-08-09', type: 'longrun', title: '🏆 SARS WILD RUN!', icon: '🏆', headerClass: 'longrun-header', btnClass: 'long-btn',
+    pow: 'RACE DAY!!', moto: 'THIS IS IT! 13.1 miles on the wild trail. You trained 11 weeks for this moment. RUN WILD AND FREE! 🔥🦶',
+    steadyMoto: 'RACE DAY! 13.1 miles. Trust your training, fuel smart, and FINISH STRONG on that wild trail!',
+    distance: '13.1 miles (SARS Wild Run)', duration: 'RACE DAY!', intervals: 'Galloway your plan', xp: 500,
     steps: [
       { text: 'Hydrate & light breakfast 🍌', time: '60 min before' },
       { text: 'Gear up — bib, shoes, fuel, watch', time: '30 min before' },
       { text: '10 min warmup walk', time: '10 min' },
-      { text: 'START THE RACE! Run/walk your plan with confidence', time: 'LET\'S GO!' },
+      { text: 'START THE SARS WILD RUN! Run/walk your plan with confidence', time: 'RUN WILD!' },
       { text: 'Fuel & water every 3–4 miles', time: 'during' },
-      { text: 'Miles 10–11 — dig deep, you\'ve got this!', time: 'almost there' },
-      { text: 'FINISH LINE — 13.1 MILES DONE! 🏆', time: 'VICTORY!' },
-      { text: 'Cooldown walk + celebrate!', time: '15 min' }
+      { text: 'Miles 10–11 — dig deep, the forest has your back!', time: 'almost there' },
+      { text: 'FINISH LINE — 13.1 MILES DONE! 🏆🦶', time: 'VICTORY!' },
+      { text: 'Cooldown walk + celebrate with Bigfoot!', time: '15 min' }
     ],
     steadySteps: [
       { text: 'Hydrate & light breakfast 🍌', time: '60 min before' },
       { text: 'Gear up', time: '30 min before' },
       { text: '10 min warmup walk', time: '10 min' },
-      { text: 'Steady race pace — you know your body!', time: 'GO!' },
+      { text: 'Steady race pace — you know your body, trust the trail!', time: 'GO!' },
       { text: 'Fuel every 3–4 miles', time: 'during' },
       { text: 'FINISH LINE! 🏆', time: 'VICTORY!' },
       { text: 'Cooldown + celebrate!', time: '15 min' }
@@ -4399,11 +4407,11 @@ function renderHeroStrip() {
 
   // villainCountdown & villainClock are driven by startLiveCountdown() — don't overwrite here
   if (daysLeft <= 7) {
-    document.getElementById('villainName').textContent = '\u26A0\uFE0F THE FINAL BATTLE IS NEAR';
+    document.getElementById('villainName').textContent = '\uD83E\uDDB6 THE WILD RUN IS HERE!';
   } else if (daysLeft <= 21) {
-    document.getElementById('villainName').textContent = '\uD83D\uDD25 THE DEADLINE CLOSES IN';
+    document.getElementById('villainName').textContent = '\uD83C\uDFD5\uFE0F THE WILD TRAIL CALLS';
   } else {
-    document.getElementById('villainName').textContent = '\uD83D\uDC80 THE DEADLINE APPROACHES';
+    document.getElementById('villainName').textContent = '\uD83C\uDF32 THE WILD RUN APPROACHES';
   }
   document.getElementById('issueNum').textContent = getWeekNumber();
   var d = new Date(activeDate + 'T12:00:00');
@@ -4610,7 +4618,7 @@ function renderWorkout() {
           '</div>' +
 
           '<div class="me-encouragement">' +
-            '<span class="me-enc-icon">\uD83E\uDDB8\u200D\u2640\uFE0F</span>' +
+            '<span class="me-enc-icon">\uD83E\uDDB6</span>' +
             mem.encouragement +
           '</div>' +
 
@@ -5044,13 +5052,13 @@ function renderStoryRecap() {
 
 // ===== MILESTONE UNLOCK PANELS =====
 var MILESTONES = [
-  { id: 'first_run',    emoji: '\u26A1', title: 'YOUR ORIGIN\nSTORY BEGINS!',   sub: 'Iron Lizzie has left the building. First mission crushed. The half marathon won\'t know what hit it.', banner: '\uD83C\uDFC6 MILESTONE UNLOCKED',  check: function(s){ return s.completedCount >= 1; } },
-  { id: 'first_longrun',emoji: '\uD83C\uDF04', title: 'LONG RUN\nUNLOCKED!',   sub: 'You ran farther than most people drive to work. Long runs are your superpower now.',                   banner: '\uD83C\uDFC6 MILESTONE UNLOCKED',  check: function(s){ return s.longRunsDone >= 1; } },
-  { id: 'run_8mi',      emoji: '\uD83D\uDCA5', title: 'SINGLE DIGITS\nCONQUERED!', sub: '8 miles! The half marathon villain is starting to sweat. You are officially scary.',              banner: '\uD83D\uDD25 LEGENDARY MILESTONE', check: function(s){ return s.maxLongRun >= 8; } },
-  { id: 'run_10mi',     emoji: '\uD83D\uDD1F', title: 'DOUBLE DIGITS!\nLET\'S GO!!', sub: 'TEN miles. If that isn\'t superhero energy, nothing is. 13.1 is RIGHT THERE. You\'ve got this.', banner: '\uD83D\uDD25 LEGENDARY MILESTONE', check: function(s){ return s.maxLongRun >= 10; } },
-  { id: 'halfway',      emoji: '\u2B50',        title: 'HALFWAY\nHERO!',           sub: 'Over the mountain. You\'ve already proven you can do this. The second half is all downhill... kind of.', banner: '\u2B50 50% COMPLETE',             check: function(s){ return s.completedCount >= Math.floor(s.totalDays / 2); } },
-  { id: 'peak_week',    emoji: '\uD83C\uDFD4\uFE0F', title: 'PEAK WEEK!\nFINAL BOSS\nUNLOCKED',     sub: 'This is the highest you\'ll climb. 11 miles on Saturday. After this — taper, then race day.',           banner: '\uD83C\uDFD4\uFE0F PEAK WEEK BEGINS',   check: function(s){ return s.inPeakWeek; } },
-  { id: 'race_week',    emoji: '\uD83C\uDFC1',  title: 'RACE WEEK!\nFINAL BOSS\nMODE ACTIVATED', sub: 'YOU TRAINED FOR THIS. 10 weeks. Hundreds of miles. Aug 9 is YOUR day. Go get that medal.', banner: '\uD83C\uDFC1 RACE WEEK \u2014 LET\'S GO!', check: function(s){ return s.inRaceWeek; } },
+  { id: 'first_run',    emoji: '\uD83E\uDDB6', title: 'YOUR WILD RUN\nSTORY BEGINS!',   sub: 'First mission crushed. The SARS Wild Run doesn\'t know what\'s coming for it. Bigfoot is impressed.', banner: '\uD83C\uDFC6 MILESTONE UNLOCKED',  check: function(s){ return s.completedCount >= 1; } },
+  { id: 'first_longrun',emoji: '\uD83C\uDF32', title: 'LONG RUN\nUNLOCKED!',   sub: 'You ran farther than most people drive to work. Long runs are your superpower now. The forest approves.',                   banner: '\uD83C\uDFC6 MILESTONE UNLOCKED',  check: function(s){ return s.longRunsDone >= 1; } },
+  { id: 'run_8mi',      emoji: '\uD83D\uDCA5', title: 'SINGLE DIGITS\nCONQUERED!', sub: '8 miles! The SARS Wild Run is starting to sweat. You are officially a trail threat. Bigfoot was watching.',              banner: '\uD83D\uDD25 LEGENDARY MILESTONE', check: function(s){ return s.maxLongRun >= 8; } },
+  { id: 'run_10mi',     emoji: '\uD83D\uDD1F', title: 'DOUBLE DIGITS!\nLET\'S GO!!', sub: 'TEN miles. If that isn\'t Bigfoot energy, nothing is. 13.1 is RIGHT THERE. The forest believes in you.', banner: '\uD83D\uDD25 LEGENDARY MILESTONE', check: function(s){ return s.maxLongRun >= 10; } },
+  { id: 'halfway',      emoji: '\u2B50',        title: 'HALFWAY\nHERO!',           sub: 'Over the mountain. You\'ve proven you can do this. The second half is all downhill... kind of. Bigfoot agrees.', banner: '\u2B50 50% COMPLETE',             check: function(s){ return s.completedCount >= Math.floor(s.totalDays / 2); } },
+  { id: 'peak_week',    emoji: '\uD83C\uDFD4\uFE0F', title: 'PEAK WEEK!\nFINAL BOSS\nUNLOCKED',     sub: 'This is the highest you\'ll climb. 11 miles on Saturday. After this — taper, then SARS Wild Run day.',           banner: '\uD83C\uDFD4\uFE0F PEAK WEEK BEGINS',   check: function(s){ return s.inPeakWeek; } },
+  { id: 'race_week',    emoji: '\uD83C\uDFC1',  title: 'RACE WEEK!\nFINAL BOSS\nMODE ACTIVATED', sub: 'YOU TRAINED FOR THIS. 10 weeks. Hundreds of miles. Aug 9 is YOUR day. Run wild. Run free.', banner: '\uD83C\uDFC1 RACE WEEK \u2014 LET\'S GO!', check: function(s){ return s.inRaceWeek; } },
 ];
 
 function getMilestoneStats() {
@@ -5139,12 +5147,12 @@ function getWeekStatsData() {
 }
 
 function getWeekStatsFlavor(data) {
-  if (data.doneCount === 0) return '"Every legend starts somewhere. This week\'s chapter hasn\'t been written yet..." \uD83D\uDCD6';
+  if (data.doneCount === 0) return '"Every legend starts somewhere. This week\'s trail hasn\'t been blazed yet..." \uD83C\uDF32';
   var pct = data.totalCount > 0 ? data.doneCount / data.totalCount : 0;
-  if (pct >= 1)    return '"PERFECT WEEK! Iron Lizzie is UNSTOPPABLE. The half marathon villain trembles." \uD83D\uDD25';
-  if (pct >= 0.75) return '"Almost flawless. A true hero\'s week. Keep this momentum going!" \u26A1';
-  if (pct >= 0.5)  return '"Solid halfway effort. Champions show up even when it\'s hard." \uD83D\uDCAA';
-  return '"Still fighting. Still training. Still a hero \u2014 even on the hard weeks." \uD83E\uDDB8\u200D\u2640\uFE0F';
+  if (pct >= 1)    return '"PERFECT WEEK! The trail trembles. Bigfoot is taking notes." \uD83E\uDDB6\uD83D\uDD25';
+  if (pct >= 0.75) return '"Almost flawless. A true trail hero\'s week. Keep blazing that path!" \u26A1';
+  if (pct >= 0.5)  return '"Solid halfway effort. Even Bigfoot takes rest days. Mostly." \uD83D\uDC3E';
+  return '"Still fighting. Still training. Still a wild runner \u2014 even on the hard weeks." \uD83C\uDF32';
 }
 
 function renderWeekStats() {
@@ -5250,12 +5258,12 @@ var REVEAL_DISTANCES  = ['2 miles','2.5 miles','3 miles','3.5 miles','4 miles','
 var REVEAL_LOCATIONS  = ['\uD83C\uDF32 OUTSIDE', '\uD83C\uDFCB\uFE0F TREADMILL'];
 var REVEAL_INTERVALS  = ['30s RUN / 30s WALK', '60s RUN / 60s WALK', '60s RUN / 30s WALK', '90s RUN / 30s WALK'];
 var REVEAL_TITLES     = [
-  'OPERATION: EARLY BIRD', 'MISSION: IRON LEGS', 'CODENAME: PAVEMENT QUEEN',
-  'PROJECT: SUNRISE HUSTLE', 'OPERATION: SWEAT & GLORY', 'MISSION: DEADLINE CRUSHER',
-  'CODENAME: MILE MUNCHER', 'OPERATION: HERO PROTOCOL', 'MISSION: ROAD WARRIOR',
+  'OPERATION: BIGFOOT PATROL', 'MISSION: TRAIL BLAZER', 'CODENAME: FOREST RUNNER',
+  'PROJECT: WILD STRIDE', 'OPERATION: SWEAT & GLORY', 'MISSION: WILD RUN CRUSHER',
+  'CODENAME: MILE MUNCHER', 'OPERATION: FOREST PROTOCOL', 'MISSION: TRAIL WARRIOR',
   'CODENAME: UNSTOPPABLE', 'OPERATION: LIZZIE UNLEASHED', 'MISSION: FAST & FEARLESS',
-  'CODENAME: GRIT MACHINE', 'OPERATION: HALFWAY THERE', 'MISSION: HYDRATE & CONQUER',
-  'CODENAME: KICK & RUN', 'OPERATION: THUNDERSTRIDE', 'MISSION: FULL SEND'
+  'CODENAME: BIGFOOT TRACKS', 'OPERATION: HALFWAY THERE', 'MISSION: HYDRATE & CONQUER',
+  'CODENAME: STOMP & RUN', 'OPERATION: THUNDERSTRIDE', 'MISSION: WILD SEND'
 ];
 
 function pickRandom(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
@@ -5334,7 +5342,7 @@ function showMissionCard(animate) {
           '</div>' +
         '</div>' +
         '<div class="mission-card-footer">' +
-          '<span>&#x26A1; YOUR RANDOMIZED RUN AWAITS, HERO</span>' +
+          '<span>&#x1F463; YOUR TRAIL MISSION AWAITS, WILD RUNNER</span>' +
           '<button class="mission-dismiss-btn" id="missionDismissBtn">dismiss</button>' +
         '</div>' +
       '</div>' +
@@ -5671,7 +5679,7 @@ function showBoredCard(animate) {
 
         // Footer
         '<div class="mission-card-footer">' +
-          '<span>&#x26A1; BOREDOM IS THE VILLAIN. YOU ARE THE HERO.</span>' +
+          '<span>&#x1F463; BOREDOM IS THE VILLAIN. THE TRAIL IS YOUR HERO.</span>' +
           (p.name === 'WEEZER WALK'
             ? '<button class="bored-claim-btn" id="boredClaimBtn">\uD83C\uDFB8 CLAIM +20 XP</button>'
             : '') +
@@ -5738,7 +5746,7 @@ function printPlan() {
     if (!weekMap[wk]) { weekMap[wk] = { num: wk, days: [] }; weeks.push(weekMap[wk]); }
     weekMap[wk].days.push(d);
   });
-  var TYPE_COLOR = { run: '#e03030', longrun: '#27ae60', strength: '#7d3fc8', rest: '#aaaaaa' };
+  var TYPE_COLOR = { run: '#9B3E14', longrun: '#3D8020', strength: '#1B5E3A', rest: '#aaaaaa' };
   var TYPE_LABEL = { run: 'RUN', longrun: 'LONG RUN', strength: 'STRENGTH', rest: 'REST' };
   var rowsHTML = '';
   weeks.forEach(function(wk) {
@@ -5785,43 +5793,43 @@ function printPlan() {
   });
   var n = new Date();
   var printDate = MONTHS[n.getMonth()] + ' ' + n.getDate() + ', ' + n.getFullYear();
-  var html = '<!DOCTYPE html><html><head><meta charset="utf-8"><title>Iron Lizzie HM Training Plan</title>' +
+  var html = '<!DOCTYPE html><html><head><meta charset="utf-8"><title>Bigfoot Run — SARS Wild Run Training Plan</title>' +
     '<link rel="preconnect" href="https://fonts.googleapis.com">' +
     '<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">' +
     '<style>' +
     'body{margin:0;padding:20px;font-family:"Comic Neue",Arial,sans-serif;background:#fff;color:#111;font-size:12px}' +
     '.print-header{text-align:center;border-bottom:4px solid #111;padding-bottom:12px;margin-bottom:14px}' +
-    '.print-header h1{font-family:"Bangers",Impact,sans-serif;font-size:46px;letter-spacing:4px;margin:0;text-shadow:3px 3px 0 #e03030}' +
-    '.print-header h2{font-family:"Bangers",Impact,sans-serif;font-size:20px;letter-spacing:3px;color:#e03030;margin:2px 0 6px}' +
+    '.print-header h1{font-family:"Bangers",Impact,sans-serif;font-size:46px;letter-spacing:4px;margin:0;text-shadow:3px 3px 0 #9B3E14}' +
+    '.print-header h2{font-family:"Bangers",Impact,sans-serif;font-size:20px;letter-spacing:3px;color:#1B5E3A;margin:2px 0 6px}' +
     '.print-meta{font-size:11px;color:#555}' +
-    '.summary-bar{display:flex;gap:20px;justify-content:center;background:#111;color:#fff;padding:7px 16px;font-family:"Bangers",sans-serif;font-size:15px;letter-spacing:2px;margin-bottom:14px}' +
+    '.summary-bar{display:flex;gap:20px;justify-content:center;background:#1B5E3A;color:#fff;padding:7px 16px;font-family:"Bangers",sans-serif;font-size:15px;letter-spacing:2px;margin-bottom:14px}' +
     'table{width:100%;border-collapse:collapse}' +
-    'th{background:#111;color:#fff;font-family:"Bangers",sans-serif;font-size:13px;letter-spacing:1px;padding:6px 8px;text-align:left}' +
+    'th{background:#1C1309;color:#D4960A;font-family:"Bangers",sans-serif;font-size:13px;letter-spacing:1px;padding:6px 8px;text-align:left}' +
     'td{padding:5px 8px;border-bottom:1px solid #e8e8e8;vertical-align:top}' +
     'tr:nth-child(even) td{background:#f9f9f9}' +
-    '.week-header td{background:#fffbe6!important;font-family:"Bangers",sans-serif;font-size:13px;letter-spacing:2px;border-top:3px solid #111;border-bottom:1px solid #111;padding:7px 8px;color:#111}' +
+    '.week-header td{background:#f0e8d0!important;font-family:"Bangers",sans-serif;font-size:13px;letter-spacing:2px;border-top:3px solid #1C1309;border-bottom:1px solid #1C1309;padding:7px 8px;color:#1C1309}' +
     '.col-date{white-space:nowrap;font-weight:700;font-size:11px;color:#444;width:90px}' +
     '.col-type{font-family:"Bangers",sans-serif;letter-spacing:1px;font-size:13px;width:78px}' +
     '.col-icon{font-size:15px;width:24px}' +
     '.col-title{font-family:"Bangers",sans-serif;font-size:13px;letter-spacing:1px}' +
-    '.col-dist{white-space:nowrap;color:#1a6eb5;font-weight:700;width:60px}' +
+    '.col-dist{white-space:nowrap;color:#1B5E3A;font-weight:700;width:60px}' +
     '.col-dur{color:#555;font-size:11px;width:78px}' +
-    '.col-xp{color:#27ae60;font-family:"Bangers",sans-serif;font-size:13px;width:36px}' +
+    '.col-xp{color:#3D8020;font-family:"Bangers",sans-serif;font-size:13px;width:36px}' +
     '.col-status{font-size:11px;min-width:100px}' +
-    '.status-done{color:#27ae60;font-weight:700}' +
-    '.status-skip{color:#e67e22;font-weight:700}' +
-    '.feel-str{color:#7d3fc8;font-size:10px}' +
-    '.actual-str{color:#1a6eb5;font-size:10px}' +
+    '.status-done{color:#3D8020;font-weight:700}' +
+    '.status-skip{color:#C86A1A;font-weight:700}' +
+    '.feel-str{color:#7B5C9A;font-size:10px}' +
+    '.actual-str{color:#1B5E3A;font-size:10px}' +
     '.note-str{color:#777;font-size:10px;display:block}' +
-    '.print-footer{text-align:center;margin-top:16px;padding-top:10px;border-top:2px solid #111;font-size:10px;color:#888;font-family:"Bangers",sans-serif;letter-spacing:2px}' +
+    '.print-footer{text-align:center;margin-top:16px;padding-top:10px;border-top:2px solid #1C1309;font-size:10px;color:#888;font-family:"Bangers",sans-serif;letter-spacing:2px}' +
     '@media print{body{padding:10px}table{page-break-inside:auto}tr{page-break-inside:avoid}.week-header{page-break-before:auto}}' +
     '</style></head><body>' +
-    '<div class="print-header"><h1>&#x26A1; IRON LIZZIE &#x26A1;</h1><h2>HALF MARATHON TRAINING PLAN</h2>' +
-    '<div class="print-meta">May 25 \u2013 Aug 9, 2026 &nbsp;&middot;&nbsp; 11 Weeks &nbsp;&middot;&nbsp; Race Day: AUG 9, 2026 &nbsp;&middot;&nbsp; Printed: ' + printDate + '</div></div>' +
-    '<div class="summary-bar"><span>&#x1F3C1; ' + planDays.length + ' DAYS</span><span>&#x1F3C3; ' + totalMiles.toFixed(1) + ' MI PLANNED</span><span>&#x26A1; ' + totalXP + ' XP</span><span>&#x2705; ' + doneCount + ' DONE</span></div>' +
+    '<div class="print-header"><h1>&#x1F463; BIGFOOT RUN &#x1F463;</h1><h2>SARS WILD RUN TRAINING PLAN</h2>' +
+    '<div class="print-meta">May 25 \u2013 Aug 9, 2026 &nbsp;&middot;&nbsp; 11 Weeks &nbsp;&middot;&nbsp; SARS Wild Run: AUG 9, 2026 &nbsp;&middot;&nbsp; Printed: ' + printDate + '</div></div>' +
+    '<div class="summary-bar"><span>&#x1F3C1; ' + planDays.length + ' DAYS</span><span>&#x1F9E5; ' + totalMiles.toFixed(1) + ' MI PLANNED</span><span>&#x26A1; ' + totalXP + ' XP</span><span>&#x2705; ' + doneCount + ' DONE</span></div>' +
     '<table><thead><tr><th>DATE</th><th>TYPE</th><th></th><th>WORKOUT</th><th>DIST</th><th>DURATION</th><th>XP</th><th>STATUS / NOTES</th></tr></thead>' +
     '<tbody>' + rowsHTML + '</tbody></table>' +
-    '<div class="print-footer">IRON LIZZIE &mdash; HALF MARATHON SAGA &mdash; VOL. 1 &mdash; &copy; 2026</div>' +
+    '<div class="print-footer">BIGFOOT RUN &mdash; SARS WILD RUN SAGA &mdash; VOL. 1 &mdash; &copy; 2026</div>' +
     '<scr' + 'ipt>window.onload=function(){window.print();}<\/scr' + 'ipt>' +
     '</body></html>';
   var w = window.open('', '_blank', 'width=960,height=750');
@@ -5952,7 +5960,7 @@ function renderAdventureJournal() {
       var dateObj = new Date(ds + 'T12:00:00');
       var dateLabel = WEEK_DAYS[dateObj.getDay()] + ' ' + MONTHS[dateObj.getMonth()] + ' ' + dateObj.getDate();
       var feel = j.feel ? FEEL_OPTIONS[j.feel - 1] : null;
-      var TYPE_COLOR = { run: 'var(--red)', longrun: '#27ae60', strength: '#7d3fc8', rest: '#aaa' };
+      var TYPE_COLOR = { run: 'var(--red)', longrun: '#3D8020', strength: '#1B5E3A', rest: '#aaa' };
       var typeColor = TYPE_COLOR[day.type] || 'var(--ink)';
 
       var feelChip = feel
@@ -6021,10 +6029,10 @@ function renderWeezerSideQuest() {
         '<div class="wsq-trigger-row">' +
           '<div class="wsq-trigger-label">' +
             '<span class="wsq-dog-emoji">\uD83D\uDC36</span>' +
-            'WEEZER SIDE QUEST' +
+            'WEEZER\'S FOREST PATROL' +
             '<span class="wsq-dog-emoji">\uD83D\uDC36</span>' +
           '</div>' +
-          '<button class="wsq-trigger-btn" id="wsqBtn">ROLL A DOG MISSION</button>' +
+          '<button class="wsq-trigger-btn" id="wsqBtn">ROLL A FOREST MISSION</button>' +
         '</div>' +
       '</div>';
     document.getElementById('wsqBtn').addEventListener('click', function() {
@@ -6050,7 +6058,7 @@ function showWeezerQuest(animate) {
         '<div class="wsq-card-header">' +
           '<div class="wsq-header-left">' +
             '<span class="wsq-header-dog">\uD83D\uDC15</span>' +
-            '<span class="wsq-header-title">WEEZER SIDE QUEST</span>' +
+            '<span class="wsq-header-title">WEEZER\'S FOREST PATROL</span>' +
           '</div>' +
           '<button class="wsq-reroll-btn" id="wsqRerollBtn">\uD83C\uDFB2 NEW QUEST</button>' +
         '</div>' +
@@ -6145,7 +6153,7 @@ function renderAll() {
   renderAdventureJournal();
 }
 
-// ── IRON LIZZIE SAYS — QUOTE BOX ─────────────────────────────
+// ── BIGFOOT SAYS — QUOTE BOX ─────────────────────────────────
 function renderQuoteBox(forceNew) {
   var el = document.getElementById('quoteBox');
   if (!el) return;
@@ -6163,8 +6171,8 @@ function renderQuoteBox(forceNew) {
   el.innerHTML =
     '<div class="ilq-wrap' + (forceNew ? ' ilq-new' : '') + '">' +
       '<div class="ilq-header">' +
-        '<span class="ilq-icon">\uD83E\uDDB8\u200D\u2640\uFE0F</span>' +
-        '<span class="ilq-title">IRON LIZZIE SAYS:</span>' +
+        '<span class="ilq-icon">\uD83E\uDDB6</span>' +
+        '<span class="ilq-title">BIGFOOT SAYS:</span>' +
         '<button class="ilq-refresh-btn" id="ilqRefreshBtn" title="New quote">\uD83D\uDD04</button>' +
       '</div>' +
       '<blockquote class="ilq-quote" id="ilqText">\u201C' + q.q + '\u201D</blockquote>' +
@@ -6195,7 +6203,7 @@ function fireActionWord() {
 function fireConfetti() {
   var container = document.getElementById('confetti');
   container.innerHTML = '';
-  var colors = ['#FFE338','#E8142A','#1A47B8','#00D166','#00CFFF','#8B5CF6','#FF6B2B','#fff'];
+  var colors = ['#D4960A','#9B3E14','#1B5E3A','#3D8020','#3DAA96','#7B5C9A','#C86A1A','#fff'];
   var shapes = ['\u25A0','\u25CF','\u25B2','\u2605','\u25C6','\u26A1','\uD83D\uDCA5'];
   for (var i = 0; i < 60; i++) {
     var piece = document.createElement('div');
@@ -6532,7 +6540,7 @@ function showInstallBanner() {
   var banner = document.createElement('div');
   banner.className = 'install-banner';
   banner.innerHTML =
-    '<div class="install-banner-text">\uD83E\uDDB8\u200D\u2640\uFE0F ADD TO HOME SCREEN<span class="install-banner-sub">Train like a hero — app mode!</span></div>' +
+    '<div class="install-banner-text">\uD83E\uDDB6 ADD TO HOME SCREEN<span class="install-banner-sub">Run wild — app mode!</span></div>' +
     '<button class="install-banner-btn" id="installBtn">INSTALL</button>' +
     '<button class="install-banner-close" id="installDismiss">\u2715</button>';
   document.body.appendChild(banner);

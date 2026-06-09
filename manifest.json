@@ -1,11 +1,11 @@
 {
-  "name": "Iron Lizzie HM Training",
-  "short_name": "Iron Lizzie",
-  "description": "Iron Lizzie Half Marathon Training Plan — Galloway style, comic book glory",
+  "name": "Bigfoot Run — SARS Wild Run Training",
+  "short_name": "Bigfoot Run",
+  "description": "Running With Bigfoot — SARS Wild Run Training Plan · Galloway style, forest glory",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#f5f0e1",
-  "theme_color": "#E8142A",
+  "background_color": "#EFE8CC",
+  "theme_color": "#1B5E3A",
   "orientation": "portrait-primary",
   "icons": [
     {
