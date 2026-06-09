@@ -61,18 +61,20 @@ body::after {
   z-index: 0;
 }
 
-/* SPLASH SCREEN */
+/* SPLASH SCREEN — BIGFOOT HOME */
 .splash-screen {
   position: fixed;
   inset: 0;
   z-index: 10000;
-  background: var(--ink);
+  background: url('./bigfoot-hero.jpg') center 35% / cover no-repeat;
+  background-color: #1A2E0A;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  cursor: pointer;
+  justify-content: space-between;
   transition: opacity 0.6s, transform 0.6s;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 10px rgba(200,146,10,0.55);
 }
 .splash-screen.dismissed {
   opacity: 0;
@@ -215,6 +217,84 @@ body::after {
 .splash-corner.tr { top: 16px; right: 16px; }
 .splash-corner.bl { bottom: 16px; left: 16px; }
 .splash-corner.br { bottom: 16px; right: 16px; }
+
+/* ── BIGFOOT HOME SCREEN ── */
+.splash-bf-overlay {
+  position: absolute; inset: 0; pointer-events: none; z-index: 1;
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0) 28%, rgba(0,0,0,0) 48%, rgba(0,0,0,0.48) 65%, rgba(0,0,0,0.82) 100%),
+    linear-gradient(to right, rgba(200,146,10,0.22) 0%, transparent 7%, transparent 93%, rgba(200,146,10,0.22) 100%);
+}
+.splash-bf-header {
+  position: relative; z-index: 2; text-align: center;
+  padding: 44px 20px 10px; width: 100%;
+}
+.splash-bf-title {
+  font-family: 'Bangers', cursive;
+  font-size: 52px;
+  letter-spacing: 5px;
+  color: #7FECF7;
+  text-shadow:
+    0 0 8px rgba(127,236,247,0.95),
+    0 0 22px rgba(61,170,150,0.8),
+    0 0 50px rgba(27,94,58,0.55),
+    3px 3px 0 rgba(0,0,0,0.85);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.splash-bf-sub {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 13px;
+  color: rgba(255,255,255,0.82);
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.95);
+}
+.splash-bf-spacer { flex: 1; }
+.splash-bf-buttons {
+  position: relative; z-index: 2;
+  width: 100%; padding: 0 30px 52px;
+  display: flex; flex-direction: column; gap: 11px;
+}
+.splash-bf-btn {
+  width: 100%;
+  padding: 17px 24px;
+  border-radius: 50px;
+  border: 1.5px solid rgba(200,146,10,0.4);
+  background: linear-gradient(to right, rgba(139,75,26,0.88) 0%, rgba(27,110,101,0.88) 100%);
+  color: #fff;
+  font-family: 'Bangers', cursive;
+  font-size: 20px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 3px 20px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.1);
+  transition: transform 0.12s, box-shadow 0.12s;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+.splash-bf-btn:active { transform: scale(0.96); box-shadow: 0 1px 6px rgba(0,0,0,0.4); }
+/* Sparkle particles */
+.splash-particles { position: absolute; inset: 0; pointer-events: none; z-index: 2; overflow: hidden; }
+.spark {
+  position: absolute; border-radius: 50%;
+  background: radial-gradient(circle, #D4960A 0%, rgba(212,150,10,0) 70%);
+  animation: sparkFloat var(--dur, 3s) var(--delay, 0s) ease-in-out infinite;
+}
+@keyframes sparkFloat {
+  0%, 100% { transform: translateY(0) scale(0.8); opacity: 0.5; }
+  50% { transform: translateY(-12px) scale(1.5); opacity: 1; }
+}
+/* Home button in masthead */
+.home-btn {
+  position: absolute; top: 10px; left: 52px;
+  background: var(--paper); border: 2.5px solid var(--ink);
+  box-shadow: 2px 2px 0 var(--ink); border-radius: 50%;
+  width: 36px; height: 36px; font-size: 16px; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  z-index: 20; transition: background 0.15s, box-shadow 0.1s; padding: 0; line-height: 1;
+}
+.home-btn:hover { background: #eee; }
+.home-btn:active { transform: translate(2px,2px); box-shadow: 0 0 0 var(--ink); }
 
 /* MAIN WRAPPER */
 .comic-page {
@@ -3166,21 +3246,21 @@ body::after {
 </head>
 <body>
 
-<!-- SPLASH SCREEN -->
-<div class="splash-screen" id="splashScreen" onclick="dismissSplash()">
-  <div class="splash-bg"></div>
-  <div class="splash-rays"></div>
-  <div class="splash-corner tl">RUN WILD IN THE</div>
-  <div class="splash-corner tr">PACIFIC NORTHWEST</div>
-  <div class="splash-corner bl">ISSUE #1 OF INFINITY</div>
-  <div class="splash-corner br">SARS WILD RUN &middot; AUG 9</div>
-  <div class="splash-content">
-    <div class="splash-issue">PRESENTING THE LEGENDARY</div>
-    <div class="splash-hero-silhouette">&#x1F463;</div>
-    <div class="splash-title">BIGFOOT RUN</div>
-    <div class="splash-sub">SARS WILD RUN QUEST</div>
-    <div class="splash-tagline">"The trail doesn't run itself. Lace up. The forest is waiting."</div>
-    <div class="splash-cta">-- TAP TO BEGIN YOUR WILD RUN SAGA --</div>
+<!-- SPLASH SCREEN — BIGFOOT HOME -->
+<div class="splash-screen" id="splashScreen">
+  <div class="splash-bf-overlay"></div>
+  <div class="splash-particles" id="splashParticles"></div>
+  <div class="splash-bf-header">
+    <div class="splash-bf-title">THE BIGFOOT RUN</div>
+    <div class="splash-bf-sub">Run with Style in the Pacific Northwest</div>
+  </div>
+  <div class="splash-bf-spacer"></div>
+  <div class="splash-bf-buttons">
+    <button class="splash-bf-btn" id="btnMissions">MISSIONS</button>
+    <button class="splash-bf-btn" id="btnMap">&#x1F5FA;&#xFE0F; BIGFOOT HIGHWAY MAP</button>
+    <button class="splash-bf-btn" id="btnTracker">&#x1F4CD; BIGFOOT TRACKER</button>
+    <button class="splash-bf-btn" id="btnStats">STATS</button>
+    <button class="splash-bf-btn" id="btnSettings">SETTINGS</button>
   </div>
 </div>
 
@@ -3199,6 +3279,7 @@ body::after {
     <div class="masthead">
       <button class="sfx-toggle" id="sfxToggle" title="Toggle sound effects">🔊</button>
       <button class="print-btn" id="printPlanBtn" title="Print / Save PDF Training Plan">🖨️</button>
+      <button class="home-btn" id="homeBtn" title="Back to Home">&#x1F463;</button>
       <div class="masthead-badge" id="mastheadBadge">&#x1F463; AUG 9 &middot; SARS WILD RUN</div>
       <div class="masthead-vol">
         <span>VOL. 1 &middot; ISSUE #<span id="issueNum">1</span></span>
@@ -4179,18 +4260,61 @@ else {
 })();
 
 // SPLASH
-function dismissSplash() {
+function dismissSplash(section) {
   var splash = document.getElementById('splashScreen');
   splash.classList.add('dismissed');
   setTimeout(function(){ splash.style.display = 'none'; }, 700);
   setTimeout(spawnAmbientSfx, 1000);
+  if (section === 'tracker') {
+    setTimeout(function(){
+      historyLogOpen = true; renderTrainingLog();
+      adventureJournalOpen = true; renderAdventureJournal();
+      var el = document.getElementById('trainingLog');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }, 800);
+  } else if (section === 'stats') {
+    setTimeout(function(){
+      var el = document.getElementById('weekStats');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }, 800);
+  } else if (section === 'map') {
+    setTimeout(function(){
+      var el = document.getElementById('missionReveal');
+      if (el) { state._missionRevealed = false; state._missionDismissed = false; saveState(state); renderMissionReveal(); el.scrollIntoView({ behavior: 'smooth' }); }
+    }, 800);
+  }
+  // 'missions' and 'settings' just open the main app
 }
-if (state._splashSeen) {
-  document.getElementById('splashScreen').style.display = 'none';
-} else {
-  state._splashSeen = true;
-  saveState(state);
-}
+
+// Spawn sparkle particles on the home screen
+(function spawnSplashParticles() {
+  var container = document.getElementById('splashParticles');
+  if (!container) return;
+  var spots = [[12,15],[78,20],[6,42],[90,35],[22,70],[72,62],[48,12],[55,82],[32,52],[66,40],[8,88],[85,75],[40,28],[60,55]];
+  spots.forEach(function(pos) {
+    var s = document.createElement('div');
+    s.className = 'spark';
+    s.style.left = pos[0] + '%';
+    s.style.top  = pos[1] + '%';
+    s.style.setProperty('--dur',   (2.2 + Math.random() * 2.5) + 's');
+    s.style.setProperty('--delay', (Math.random() * 2.5) + 's');
+    var sz = (5 + Math.random() * 9) + 'px';
+    s.style.width = s.style.height = sz;
+    container.appendChild(s);
+  });
+})();
+
+// Wire home screen buttons
+(function() {
+  var map = { btnMissions: 'missions', btnMap: 'map', btnTracker: 'tracker', btnStats: 'stats', btnSettings: 'settings' };
+  Object.keys(map).forEach(function(id) {
+    var btn = document.getElementById(id);
+    if (btn) btn.addEventListener('click', function() { dismissSplash(map[id]); });
+  });
+})();
+
+// Home screen always shows on load — it's the navigation hub
+// (remove to only show once: restore the _splashSeen check)
 
 // DAY SWAP SYSTEM
 function getSwaps() { return (state._swaps) || {}; }
@@ -6571,6 +6695,16 @@ if (sfxBtn) {
 // Print Plan button
 var printBtn = document.getElementById('printPlanBtn');
 if (printBtn) { printBtn.addEventListener('click', printPlan); }
+
+// Home button — re-shows the home screen
+var homeBtn = document.getElementById('homeBtn');
+if (homeBtn) {
+  homeBtn.addEventListener('click', function() {
+    var splash = document.getElementById('splashScreen');
+    splash.style.display = '';
+    splash.classList.remove('dismissed');
+  });
+}
 
 // Live countdown clock — ticks every second
 function startLiveCountdown() {
